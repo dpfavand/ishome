@@ -1,7 +1,7 @@
 var Gpio = require('onoff').Gpio,
     led_dan = new Gpio('18', 'out'),
     ping = require('ping'),
-    host = 'android-144625adee24b16c';
+    host = 'android-8ac6f3963ac248b3';
    
 function exit() {
   led_dan.unexport();

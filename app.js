@@ -15,6 +15,12 @@ function lookForDevice(){
     ping.sys.probe(host, function(isAlive){
         var msg = isAlive ? 'host ' + host + ' is alive' : 'host ' + host + ' is dead';
         console.log(msg);
+        if (isAlive) {
+            led_dan.writeSync(1);
+        }
+        else {
+            led_dan.writeSync(0);
+        }
         setTimeout(lookForDevice, 5 * 1000);
     })
 }

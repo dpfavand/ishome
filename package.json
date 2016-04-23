@@ -1,0 +1,23 @@
+{
+  "name": "ishome",
+  "version": "1.0.0",
+  "description": "Turn on a light when a recognized device is on the network",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dpfavand/ishome.git"
+  },
+  "author": "Daniel Favand",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dpfavand/ishome/issues"
+  },
+  "homepage": "https://github.com/dpfavand/ishome#readme",
+  "dependencies": {
+    "ping": "^0.1.10",
+    "onoff": "^1.0.4"
+  }
+}

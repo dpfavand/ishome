@@ -4,8 +4,8 @@ var Gpio = require('onoff').Gpio,
     host = 'android-144625adee24b16c';
    
 function exit() {
-  led.unexport();
-  button.unexport();
+  led_dan.unexport();
+  
   process.exit();
 }
 

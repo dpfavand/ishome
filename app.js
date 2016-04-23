@@ -12,7 +12,7 @@ function exit() {
 process.on('SIGINT', exit);
 
 function lookForDevice(){
-    ping.syst.probe(host, function(isAlive){
+    ping.sys.probe(host, function(isAlive){
         var msg = isAlive ? 'host ' + host + ' is alive' : 'host ' + host + ' is dead';
         console.log(msg);
         setTimeout(lookForDevice, 5 * 1000);
